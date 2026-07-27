@@ -1,4 +1,3 @@
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -354,11 +353,11 @@
             <div class="section-content">
                 <h3>5 простых шагов для успешной сборки:</h3>
                 <ol style="margin-left: 20px; margin-top: 20px;">
-                    <li style="margin-bottom: 15px;"><strong>Определите цель использования</strong> - игровой ПК, рабочая станция, домашний медиацентр.</li>
+                    <li style="margin-bottom: 15px;"><strong>Определите цель использования</strong> - игровой или рабочая станция</li>
                     <li style="margin-bottom: 15px;"><strong>Установите бюджет</strong> - оптимальное распределение средств между компонентами.</li>
                     <li style="margin-bottom: 15px;"><strong>Выберите центральные компоненты</strong> - процессор и видеокарта определяют производительность.</li>
                     <li style="margin-bottom: 15px;"><strong>Обеспечьте совместимость</strong> - сокет процессора, форм-фактор материнской платы, мощность БП.</li>
-                    <li style="margin-bottom: 15px;"><strong>Продумайте охлаждение и апгрейд</strong> - запас по мощности и свободные слоты.</li>
+                    <li style="margin-bottom: 15px;"><strong>Продумайте охлаждение и апгрейд</strong> - запас по выделяемой мощности и свободные слоты.</li>
                 </ol>
                 <p style="margin-top: 30px; font-style: italic;">"Сборка ПК - это как конструктор для взрослых. Когда понимаешь основы, процесс становится увлекательным и творческим!"</p>
             </div>
@@ -447,10 +446,10 @@
                 <div class="detail-card" style="border-left: 4px solid #3498db;">
                     <h3>Для рендеринга/рабочих задач</h3>
                     <ul>
-                        <li><strong>Ядер больше-лучше:</strong> 16+ (i9-14900K, Xeon, Ryzen 9 9950X, Threadripper)</li>
-                        <li><strong>Многопоточность:</strong> Hyper-Threading/SMT критически важен</li>
-                        <li><strong>Архитектура:</strong> уступает место общей производительности</li>
-                        <li><strong>Память:</strong> DDR5 или DDR4 ECC</li>
+                        <li><strong>Ядер больше-лучше:</strong> 16+ (Intel core i9/U9, Xeon; AMD Ryzen 9/AI 9, Threadripper)</li>
+                        <li><strong>Многопоточность:</strong> HT/SMT критически важен при менее чем 8 ядрах</li>
+                        <li><strong>Архитектура:</strong> влияет на эффективность и поддерживаемые инструкции</li>
+                        <li><strong>Память:</strong> DDR5 или DDR5 ECC</li>
                     </ul>
                 </div>
             </div>
@@ -461,18 +460,18 @@
                 <div class="detail-card" style="border-left: 4px solid #e74c3c;">
                     <h3>Для игр</h3>
                     <ul>
-                        <li><strong>6-12 ядер:</strong> Core i5/i7 или Ryzen 5/7/9</li>
-                        <li><strong>Частота:</strong> 4.8-5.5 GHz (турбо-режим)</li>
-                        <li><strong>Кэш:</strong> 32MB+ (увеличен у AMD X3D)</li>
+                        <li><strong>6-12 ядер:</strong> Core i5/i7 и U5 или Ryzen 5/7/9</li>
+                        <li><strong>Частота:</strong> влияет слабее архитектуры</li>
+                        <li><strong>Кэш:</strong> сильно влияет только в cpu зависимых играх или при избытке (60/90Mb+)</li>
                         <li><strong>Архитектура:</strong>
                             <ul>
-                                <li>Intel: 13-14 поколение (Raptor Lake)</li>
-                                <li>AMD: Ryzen 7000/9000 (Zen 4/Zen 5)</li>
+                                <li>Intel: core i: 12-14 поколение, core U: 1-2 поколение</li>
+                                <li>AMD: Ryzen 7000/9000</li>
                             </ul>
                         </li>
                         <li><strong>Память:</strong> DDR5 с низкими таймингами</li>
                     </ul>
-                    <p class="info-note">* Большинство игр используют 4-8 ядер, избыточные ядра помогают в стриминге</p>
+                    <p class="info-note">* Большинство игр используют 6-8 ядер, избыточные ядра помогают при фоновой загрузке</p>
                 </div>
 
                 <!-- Дополнительная информация -->
@@ -480,11 +479,11 @@
                     <h3>Важные нюансы</h3>
                     <div class="warning-note">
                         <h4>⚠️ TDP - не всегда реальное потребление!</h4>
-                        <p>Фактическое энергопотребление указывается как Turbo Boost TDP, если такого нету, то смотрим потребление в тестах</p>
+                        <p>Фактическое энергопотребление указывается как Turbo Boost TDP/P2, если такого нету, то смотрим потребление в тестах</p>
                     </div>
                     <div class="pro-tip">
-                        <h4>💡 Совет для геймеров</h4>
-                        <p>Сейчас Intel ушли в переработку архитектуры и нету смысла брать их новые процессоры</p>
+                        <h4>💡 Ситуация на рынке</h4>
+                        <p>Сейчас Intel и AMD увлеклись мобильными процессорами, новинок не будет до 2027 Q1/2</p>
                     </div>
                 </div>
             </div>
@@ -557,9 +556,9 @@
                     <div class="spec-item">
                         <h4>Технологии:</h4>
                         <ul>
-                            <li><strong>NVIDIA:</strong> DLSS (искусственное повышение FPS), RTX (трассировка лучей)</li>
-                            <li><strong>AMD:</strong> FSR (аналог DLSS), Radeon Super Resolution</li>
-                            <li><strong>Intel:</strong> XeSS (альтернатива DLSS)</li>
+                            <li><strong>NVIDIA:</strong> DLSS (ИИ дорисовка), RTX (настоящие отражения), MFG (мультигенерация кадров)</li>
+                            <li><strong>AMD:</strong> FSR (аналог DLSS), Radeon Super Resolution, поддержка RTX, FG (генерация кадров)</li>
+                            <li><strong>Intel:</strong> XeSS (аналог DLSS), поддержка RTX, MFG (мультигенерация кадров)</li>
                         </ul>
                     </div>
                 </div>
@@ -594,17 +593,15 @@
                     <div class="spec-item">
                         <p><strong>Типы систем:</strong></p>
                         <ul>
-                            <li><strong>Воздушное:</strong> 2-4 вентилятора + радиатор </li>
-                            <li><strong>Жидкостное (СЖО):</strong> Для экстремальных нагрузок</li>
-                            <li><strong>Гибридное:</strong> Комбинация жидкостного и воздушного</li>
+                            <li><strong>Воздушное или жидкостное:</strong> 1-4 вентилятора + радиатор </li>
                         </ul>
                     </div>
                     <div class="spec-item">
                         <p><strong>Тепловыделение:</strong></p>
                         <ul>
-                            <li>Бюджетные: 120-150W</li>
-                            <li>Игровые: 200-300W</li>
-                            <li>Топовые: 350-600W+</li>
+                            <li>Бюджетные: 30-75W</li>
+                            <li>Игровые: 150-350W</li>
+                            <li>Топовые и рабочие: 300-600W</li>
                         </ul>
                     </div>
                 </div>
@@ -615,8 +612,8 @@
                         <p><strong>Разъемы питания:</strong></p>
                         <div class="tag-group">
                             <span class="tech-tag">6-pin (75W)</span>
-                            <span class="tech-tag">8-pin (150W)</span>
-                            <span class="tech-tag">12VHPWR (600W)</span>
+                            <span class="tech-tag">8-pin/6+2-pin (150W)</span>
+                            <span class="tech-tag">12V-2x6 (600W)</span>
                         </div>
                     </div>
                     <div class="spec-item">
@@ -633,21 +630,29 @@
             <!-- Производители и рекомендации -->
             <div class="detail-grid">
                 <div class="detail-card">
-                    <h3>Производители</h3>
+                    <h3>Инженеры чипов</h3>
                     <div class="spec-item">
                         <h4>NVIDIA</h4>
                         <ul>
-                            <li>Лучше для: высокого бюджетных сборок, рабочих станций, ИИ, рендеринга</li>
-                            <li>Технологии: CUDA, RTX, DLSS 4.0</li>
-                            <li>Рекомендуемые модели: RTX 3060 Ti и новее</li>
+                            <li>Лучше для: высокобюджетных сборок, рабочих станций, ИИ, рендеринга</li>
+                            <li>Технологии: CUDA, DLSS, MFG</li>
+                            <li>Рекомендуемые модели: RTX 5050 и новее</li>
                         </ul>
                     </div>
                     <div class="spec-item">
                         <h4>AMD</h4>
                         <ul>
-                            <li>Лучше для: игр, бюджетных сборок</li>
-                            <li>Технологии: FSR 3.0, SAM</li>
-                            <li>Рекомендуемые модели: RX 6600 и новее</li>
+                            <li>Лучше для: игр, среднебюджетных сборок</li>
+                            <li>Технологии: ROCm, SAM, FSR, FG</li>
+                            <li>Рекомендуемые модели: RX 7600 и новее</li>
+                        </ul>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Intel</h4>
+                        <ul>
+                            <li>Лучше для: игр, бюджетных и среднебюджетных сборок</li>
+                            <li>Технологии: oneAPI, XESS, MFG</li>
+                            <li>Рекомендуемые модели: ARC B570 и новее</li>
                         </ul>
                     </div>
                 </div>
@@ -664,7 +669,7 @@
                         </ul>
                     </div>
                     <div class="warning-note">
-                        <p>⚠️ Минимальный VRAM для 2024 года — 8 ГБ (лучше 12 ГБ+)</p>
+                        <p>⚠️ Минимальный VRAM для 2026 года — 8 ГБ (лучше 12 ГБ+)</p>
                     </div>
                 </div>
             </div>
@@ -712,23 +717,23 @@
         <thead>
             <tr>
                 <th>Технология</th>
-                <th>DLSS 4.0</th>
-                <th>FSR 4.0</th>
-                <th>XeSS 1.3</th>
+                <th>DLSS 4.5</th>
+                <th>FSR 4.1</th>
+                <th>XeSS 3</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>Поддерживаемые GPU</td>
-                <td>RTX 5000</td>
-                <td>RX 9000</td>
-                <td>Intel Arc, RTX 2000+, RX 5000+</td>
+                <td>RTX 2000+</td>
+                <td>RX 6000+</td>
+                <td>Intel ARC</td>
             </tr>
             <tr>
                 <td>Использует нейросети</td>
                 <td>Да (Tensor Cores)</td>
                 <td>Да (новый алгоритм)</td>
-                <td>Частично (DP4a/XMX)</td>
+                <td>Да (XMX)</td>
             </tr>
             <tr>
                 <td>Качество (при 1440p→4K)</td>
@@ -738,9 +743,9 @@
             </tr>
             <tr>
                 <td>Прирост FPS</td>
-                <td>2-3x</td>
-                <td>2-2.8x</td>
+                <td>1.5-6x</td>
                 <td>1.5-2x</td>
+                <td>1.5-4x</td>
             </tr>
             <tr>
                 <td>Уникальные фичи</td>
@@ -765,14 +770,14 @@
                         <div class="tech-content">
                             <ul>
                                 <li><strong>Требования:</strong> RTX 2000+ </li>
-                                <li><strong>Особенности 4.0:</strong>
+                                <li><strong>Особенности 4.5:</strong>
                                     <ul>
-                                        <li>Улучшенный Ray Reconstruction для трассировки</li>
-                                        <li>Более плавный Frame Generation</li>
-                                        <li>Поддержка 8K с меньшими артефактами</li>
+                                        <li>Качество близкое к нативному</li>
+                                        <li>Встроенное сглаживание</li>
+                                        <li>увеличение количества кадров</li>
                                     </ul>
                                 </li>
-                                <li><strong>Лучше всего:</strong> Для RTX 4000/5000 с включенной трассировкой</li>
+                                <li><strong>Лучше всего:</strong> Для RTX 5000 с включенным MFG</li>
                             </ul>
                         </div>
                     </div>
@@ -785,15 +790,15 @@
                         </div>
                         <div class="tech-content">
                             <ul>
-                                <li><strong>Требования:</strong> Любые DX12 карты</li>
-                                <li><strong>Новое в 4.0:</strong>
+                                <li><strong>Требования:</strong> RX 6000+</li>
+                                <li><strong>Новое в 4.1:</strong>
                                     <ul>
                                         <li>Hybrid Motion Frames (аналог Frame Gen)</li>
                                         <li>Улучшенный временный upscaling</li>
                                         <li>Меньше артефактов на быстром движении</li>
                                     </ul>
                                 </li>
-                                <li><strong>Лучше всего:</strong> Для RX 7000/9000 с включённой трассировкой</li>
+                                <li><strong>Лучше всего:</strong> Для RX 7000/9000</li>
                             </ul>
                         </div>
                     </div>
@@ -806,12 +811,12 @@
                         </div>
                         <div class="tech-content">
                             <ul>
-                                <li><strong>Требования:</strong> Arc A-series, RTX 2000+, RX 5000+</li>
+                                <li><strong>Требования:</strong> ARC</li>
                                 <li><strong>Особенности:</strong>
                                     <ul>
                                         <li>Адаптивный алгоритм шарпинга</li>
-                                        <li>Поддержка всех платформ</li>
-                                        <li>Меньшая зависимость от нейросетей</li>
+                                        <li>качество на уровне конкурентов</li>
+                                        <li>Слабая поддержка разрабочиками</li>
                                     </ul>
                                 </li>
                                 <li><strong>Лучше всего:</strong> Для Intel Arc в балансе качества/производительности</li>
@@ -962,7 +967,7 @@
                     <div class="spec-item">
                         <h4>Оптимальная конфигурация</h4>
                         <ul>
-                            <li><strong>1 модуль:</strong> Только для бюджетных сборок</li>
+                            <li><strong>1 модуль:</strong> Только для бюджетных сборок с DDR5 или в офис</li>
                             <li><strong>2 модуля:</strong> Лучший баланс цены и производительности</li>
                             <li><strong>4 модуля:</strong> Может снижать стабильность при разгоне</li>
                             <li><strong>8+ модулей:</strong> Профессиональные решения</li>
@@ -983,8 +988,8 @@
         <tbody>
             <tr>
                 <td>Стандартные частоты</td>
-                <td>2133-3200 МГц</td>
-                <td>4800-6400 МГц</td>
+                <td>2133-4000 МГц</td>
+                <td>4800-7800 МГц</td>
             </tr>
             <tr>
                 <td>Типичные тайминги</td>
@@ -993,13 +998,13 @@
             </tr>
             <tr>
                 <td>Напряжение</td>
-                <td>1.2V</td>
-                <td>1.1V</td>
+                <td>1.2-1.45V</td>
+                <td>1.1-1.45V</td>
             </tr>
             <tr>
                 <td>Пропускная способность</td>
-                <td>25.6 ГБ/с (3200 МГц)</td>
-                <td>51.2 ГБ/с (6400 МГц)</td>
+                <td> 2x32ГБ/с</td>
+                <td> 2x62ГБ/с</td>
             </tr>
             <tr>
                 <td>Рекомендация</td>
@@ -1015,7 +1020,7 @@
                 <h4>⚠️ Важные нюансы</h4>
                 <ul>
                     <li>Смешивание модулей с разными характеристиками может снижать производительность</li>
-                    <li>Важен не только объём, но и частота (оптимум 3600-4000 МГц)</li>
+                    <li>Важен не только объём, но и частота, и тайминги </li>
                     <li>для работы двухканального режимо нужно чётное количество модулей</li>
                 </ul>
             </div>
@@ -1078,12 +1083,11 @@
                     <div class="spec-item">
                         <h4>Сокет процессора</h4>
                         <div class="tag-group">
-                            <span class="tech-tag">LGA1700 (Intel 12-14gen)</span>
+                            <span class="tech-tag">LGA1700 (Intel core i 12-14gen)</span>
                             <span class="tech-tag">AM5 (AMD Ryzen 7000+)</span>
-                            <span class="tech-tag">AM4 (AMD Ryzen 1000+)</span>
-                            <span class="tech-tag">LGA1200 (Intel 10-11gen)</span>
+                            <span class="tech-tag">AM4 (AMD Ryzen 1000-5000)</span>
+                            <span class="tech-tag">LGA 1851 (Intel core U 1-2gen)</span>
                         </div>
-                        <p class="warning-note">⚠️ Несовместим между Intel и AMD! Проверяйте поддержку конкретных процессоров.</p>
                     </div>
                 </div>
 
@@ -1094,7 +1098,7 @@
                         <h4>Ключевые интерфейсы</h4>
                         <ul>
                             <li><strong>Видео:</strong> HDMI/DP (для встроенной графики)</li>
-                            <li><strong>USB:</strong> 3.2 Gen2x2 (20 Гбит/с) / USB4 (40 Гбит/с)</li>
+                            <li><strong>USB:</strong> 3.2 Gen2x2 (10 Гбит/с), USB4/thunderbolt3/4 (40 Гбит/с)</li>
                             <li><strong>Звук:</strong> 5.1/7.1 (кодек ALC1220 или лучше)</li>
                             <li><strong>Сеть:</strong> 1G/2.5G/10G Ethernet, Wi-Fi 6E</li>
                         </ul>
@@ -1185,8 +1189,9 @@
                     <h3>Накопители</h3>
                     <div class="spec-item">
                         <ul>
-                            <li><strong>M.2:</strong> PCIe 4.0/5.0 x4 (до 16 ГБ/с)</li>
+                            <li><strong>M.2:</strong> PCIe 3.0/4.0/5.0 x4 (до 16 ГБ/с)</li>
                             <li><strong>SATA:</strong> 4-8 портов (для HDD/SSD)</li>
+                            <p class="warning-note">⚠️ Для системы рекомендуется использовать Nvme</p>
                         </ul>
                     </div>
                 </div>
@@ -1196,7 +1201,8 @@
                     <div class="spec-item">
                         <ul>
                             <li><strong>Основной:</strong> 24-pin ATX</li>
-                            <li><strong>Процессор:</strong> 4/8-pin (75/150W рекомендуется)</li>
+                            <li><strong>Процессор:</strong> 4/8/8+4/8+8-pin (144/288/432/576W/)</li>
+                             <p class="warning-note">⚠️ Плата может не запускаться без полного подключения</p>
                             <li><strong>Дополнительно:</strong> Слот PCIe выдаёт до 75W</li>
                         </ul>
                     </div>
@@ -1241,11 +1247,11 @@
             <div class="checklist-section">
                 <h3>Чеклист при покупке</h3>
                 <div class="checklist-grid">
-                    <div class="checklist-item">✅ Совместимость с процессором</div>
-                    <div class="checklist-item">✅ Достаточно фаз VRM</div>
-                    <div class="checklist-item">✅ Нужные разъёмы (USB, M.2)</div>
-                    <div class="checklist-item">✅ Поддержка DDR4/DDR5</div>
-                    <div class="checklist-item">✅ Соответствие корпусу</div>
+                    <div class="checklist-item"> Совместимость с процессором</div>
+                    <div class="checklist-item"> Достаточно фаз VRM</div>
+                    <div class="checklist-item"> Нужные разъёмы (USB, M.2)</div>
+                    <div class="checklist-item"> Поддержка DDR4/DDR5</div>
+                    <div class="checklist-item"> Соответствие корпусу</div>
                 </div>
             </div>
 
@@ -1449,10 +1455,10 @@
                         </div>
                         <div class="connector-card">
                             <div class="connector-header">
-                                <span class="connector-pins">12VHPWR (16-pin)</span>
+                                <span class="connector-pins">12V-2x6 (16-pin)</span>
                                 <span class="connector-type">Новый стандарт</span>
                             </div>
-                            <p>Для топовых видеокарт (RTX 3000/4000/5000). Обеспечивает до 600Вт (очень брезгливый к изгибам и контакту, от чего выходит из строя чаще).</p>
+                            <p>Для топовых видеокарт (RTX 4000+). Обеспечивает до 600Вт (крайне брезглив к изгибам и контакту в ранних версиях).</p>
                         </div>
                     </div>
                 </div>
@@ -1514,11 +1520,11 @@
             <div class="checklist-section">
                 <h3>Чеклист при покупке БП</h3>
                 <div class="checklist-grid">
-                    <div class="checklist-item">✅ Достаточная мощность с запасом 20-30%</div>
-                    <div class="checklist-item">✅ Нужные коннекторы (GPU, CPU)</div>
-                    <div class="checklist-item">✅ Проверенный пользователями</div>
-                    <div class="checklist-item">✅ Полный набор защит</div>
-                    <div class="checklist-item">✅ Модульность (по желанию)</div>
+                    <div class="checklist-item"> Достаточная мощность с запасом 20-30%</div>
+                    <div class="checklist-item"> Нужные коннекторы (GPU, CPU)</div>
+                    <div class="checklist-item"> Проверенный пользователями</div>
+                    <div class="checklist-item"> Полный набор защит</div>
+                    <div class="checklist-item"> Модульность (в мини сборки)</div>
                 </div>
             </div>
 
@@ -1709,18 +1715,23 @@
                     <h3>Ключевые параметры выбора</h3>
                     <div class="spec-item">
                         <h4>Совместимость</h4>
-                        <p><strong>Сокет:</strong> Должен совпадать с процессором (AM5, LGA1700 и др.)</p>
+                        <p><strong>Сокет:</strong> Должен подходить к процессору и материнской плате</p>
                         <div class="tag-group">
                             <span class="tech-tag">Intel LGA1700</span>
-                            <span class="tech-tag">Intel LGA1200</span>
+                            <span class="tech-tag">Intel LGA1851</span>
                             <span class="tech-tag">AMD AM5</span>
                             <span class="tech-tag">AMD AM4</span>
                         </div>
                     </div>
                     <div class="spec-item">
-                        <h4>Производительность</h4>
-                        <p><strong>TDP:</strong> Должен превышать TDP процессора (рекомендуется +20-30%)</p>
-                        <p><strong>Шум:</strong> 20-30 дБ - тихий, 35+ дБ - заметный шум</p>
+                        <h4>Производительность:</h4>
+                        <p><strong>TDP:</strong> Должен быть ≥ TDP процессора (рекомендуется 125%+ — чем выше, тем меньше шума)</p>
+                        <p><strong>Шум:</strong> 20-30 дБ — тихий, 35+ дБ — заметный шум</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Подсветка:</h4>
+                        <p><strong>RGB:</strong> питается от обычного коннектора вентилятора либо через molex</p>
+                        <p><strong>ARGB:</strong> умная настраиваемая подсветка, требующая 5V порт на материнской или отдельной плате для работы</p>
                     </div>
                 </div>
 
@@ -1729,11 +1740,10 @@
                     <h3>Типы систем охлаждения</h3>
                     <div class="cooling-type">
                         <h4>Воздушное (СВО)</h4>
-                        <p><strong>Габариты:</strong> Высота до 40-180 мм (проверьте корпус)</p>
+                        <p><strong>Габариты:</strong> Высота до 40-180 мм (сопоставьте корпус)</p>
                         <div class="pros-cons">
-                            <p><span class="pro">✔</span> Надёжность</p>
-                            <p><span class="pro">✔</span> Нет жидкости</p>
-                            <p><span class="con">✖</span> Большие размеры</p>
+                            <p><span class="pro">✔</span> Долговечность</p>
+                            <p><span class="con">✖</span> Ограниченность в эффективности</p>
                         </div>
                     </div>
                     <div class="cooling-type">
@@ -1742,9 +1752,8 @@
                         <div class="pros-cons">
                             <p><span class="pro">✔</span> Эффективность</p>
                             <p><span class="pro">✔</span> Компактность на CPU</p>
-                            <p><span class="con">✖</span> Риск протечки</p>
-                            <p><span class="con">✖</span> Срок службы 3-5 лет</p>
-                            <p><span class="con">✖</span> Сложность в обслуживании</p>
+                            <p><span class="con">✖</span> Риск протечки в бюджетных решениях</p>
+                            <p><span class="con">✖</span> Необходимость в обслуживании</p>
                         </div>
                     </div>
                 </div>
@@ -2053,11 +2062,11 @@
             <div class="checklist-section">
                 <h3>Чеклист при выборе корпуса</h3>
                 <div class="checklist-grid">
-                    <div class="checklist-item">✅ Совместимость с материнской платой</div>
-                    <div class="checklist-item">✅ Достаточно места для видеокарты</div>
-                    <div class="checklist-item">✅ Поддержка высоты кулера CPU</div>
-                    <div class="checklist-item">✅ Количество и расположение вентиляторов</div>
-                    <div class="checklist-item">✅ Пылевые фильтры на впуске</div>
+                    <div class="checklist-item"> Совместимость с материнской платой</div>
+                    <div class="checklist-item"> Достаточно места для видеокарты</div>
+                    <div class="checklist-item"> Поддержка высоты кулера CPU</div>
+                    <div class="checklist-item"> Количество и расположение вентиляторов</div>
+                    <div class="checklist-item"> Пылевые фильтры на впуске</div>
                 </div>
             </div>
 
@@ -2154,42 +2163,43 @@
                         <!-- Топовый уровень -->
                         <tr class="high-end">
                             <td>R9 9800X3D</td>
-                            <td>RTX 4090</td>
-                            <td>DDR5 64ГБ</td>
-                            <td>342.000</td>
+                            <td>RTX 5090</td>
+                            <td>DDR5 32ГБ</td>
+                            <td>500.000</td>
                         </tr>
                         <!-- Высокий уровень -->
                         <tr class="high-end">
                             <td>R9 9900X<br>i9 14900K</td>
-                            <td>RX 7900 XTX<br>RTX 4080 SUPER<br>RTX 4070 SUPER</td>
+                            <td>RTX 5080<br>RTX 5070ti<br>RX 9070XT</td>
                             <td>DDR5 32ГБ</td>
-                            <td>192.500<br>162.500<br>148.500</td>
+                            <td>200.000<br>150.000<br>120.000</td>
                         </tr>
                         <!-- Средний уровень -->
                         <tr class="mid-range">
                             <td>i7-14700KF<br>R5 7600X3D<br>R7 7700X</td>
-                            <td>RX 7900 XT<br>RTX 4070 SUPER</td>
-                            <td>DDR5 32ГБ</td>
-                            <td>139.000<br>132.500</td>
+                            <td>RX 9070<br>RTX 5070</td>
+                            <td>DDR5 16ГБ</td>
+                            <td>100.000<br>120.000</td>
                         </tr>
                         <tr class="mid-range">
                             <td>i5 14600KF<br>R7 5700X3D</td>
-                            <td>RX 7800 XT</td>
-                            <td>DDR5/4 16ГБ</td>
+                            <td>RX 9070 gre<br>RTX 5060ti</td>
+                            <td>DDR4 16ГБ</td>
                             <td>110.000</td>
+                        </tr>
                         </tr>
                         <!-- Бюджетный уровень -->
                         <tr class="budget">
                             <td>i5 12400F</td>
-                            <td>RX 7700 XT<br>RTX 4060</td>
-                            <td>DDR5 16ГБ</td>
-                            <td>58.500</td>
+                            <td>9060xt<br>ARC B580<br>RTX 5060</td>
+                            <td>DDR4 16ГБ</td>
+                            <td>60.000</td>
                         </tr>
                         <tr class="budget">
                             <td>R5 5600</td>
-                            <td>RX 7600 XT<br>RTX 3060</td>
+                            <td>RX 9060<br>RTX 5050</td>
                             <td>DDR4 16ГБ</td>
-                            <td>50.500</td>
+                            <td>55.000</td>
                         </tr>
                     </tbody>
                 </table>
@@ -2211,40 +2221,40 @@
                         <!-- Топовый уровень -->
                         <tr class="high-end">
                             <td>U9 285K<br>R9 9950X</td>
-                            <td>RTX 4090<br>RTX 4080</td>
+                            <td>RTX 5090<br>RTX A6000</td>
                             <td>DDR5 128ГБ</td>
-                            <td>369.000<br>257.000</td>
+                            <td>569.000<br>1.257.000</td>
                         </tr>
                         <!-- Высокий уровень -->
                         <tr class="high-end">
                             <td>I9-14900K<br>R9 7950X</td>
-                            <td>RTX 4070 SUPER</td>
+                            <td>RTX 5080</td>
                             <td>DDR5 64ГБ</td>
-                            <td>166.000</td>
+                            <td>200.000</td>
                         </tr>
                         <!-- Средний уровень -->
                         <tr class="mid-range">
                             <td>i7-13700F<br>R7 7700X</td>
-                            <td>RTX 4070 SUPER</td>
+                            <td>RTX 5070ti</td>
                             <td>DDR5 32ГБ</td>
                             <td>132.500</td>
                         </tr>
                         <!-- Бюджетный уровень -->
                         <tr class="budget">
                             <td>i5 13400F<br>R5 7500F</td>
-                            <td>RTX 4060</td>
+                            <td>RTX 5060ti 16GB</td>
                             <td>DDR5 32ГБ</td>
                             <td>70.000</td>
                         </tr>
                         <tr class="budget">
                             <td>i5 12400F</td>
-                            <td>RTX 4060</td>
-                            <td>DDR5 16ГБ</td>
+                            <td>RTX 4060ti 16GB</td>
+                            <td>DDR4 16ГБ</td>
                             <td>58.000</td>
                         </tr>
                         <tr class="budget">
                             <td>R5 5600X</td>
-                            <td>RTX 3060</td>
+                            <td>RTX 3060 12GB</td>
                             <td>DDR4 16ГБ</td>
                             <td>50.500</td>
                         </tr>
@@ -2261,7 +2271,7 @@
                         <ul>
                             <li>Акцент на мощную видеокарту</li>
                             <li>16-32ГБ оперативной памяти</li>
-                            <li>Процессор с высокой IPC</li>
+                            <li>Процессор с высокой производительностью на ядро</li>
                             <li>SSD накопители</li>
                         </ul>
                     </div>
@@ -2269,8 +2279,8 @@
                         <h4>Для рабочих задач</h4>
                         <ul>
                             <li>Многоядерные процессоры</li>
-                            <li>64-128ГБ оперативной памяти</li>
-                            <li>Видеокарты с большим VRAM</li>
+                            <li>32-128ГБ оперативной памяти</li>
+                            <li>Видеокарты с большим объёмом VRAM</li>
                             <li>Nvme для работы, HDD для хранения</li>
                         </ul>
                     </div>
@@ -2456,21 +2466,21 @@
                         <tr>
                             <td>CPU + Материнская плата</td>
                             <td>Сокет, чипсет, версия BIOS</td>
-                            <td>Intel: LGA1700 (12-14gen), AMD: AM5 (новые) / AM4 (старые)</td>
+                            <td>Intel: LGA1700 (12-14gen) / LGA1851 (1-2gen) ; AMD: AM4 / AM5 </td>
                         </tr>
                         <tr>
                             <td>RAM + Материнская плата</td>
-                            <td>Тип (DDR4/DDR5), частота, QVL-лист</td>
-                            <td>DDR4 3200-3600 МГц или DDR5 5200-6000 МГц</td>
+                            <td>Тип (DDR4/DDR5), частота, тайминги</td>
+                            <td>DDR4 3200-4000 МГц или DDR5 4800-7800 МГц</td>
                         </tr>
                         <tr>
-                            <td>Видеокарта + БП</td>
-                            <td>Разъемы питания (6+2pin), длина</td>
-                            <td>RTX 3080+ - 750Вт+, RX 6700XT - 650Вт+</td>
+                            <td>Мощность БП</td>
+                            <td>Разъемы питания (6+2pin/12V-2x6)</td>
+                            <td>RTX 3080 - 750Вт+, RX 6700XT - 650Вт+</td>
                         </tr>
                         <tr>
-                            <td>Кулер + Корпус</td>
-                            <td>Высота кулера, максимальная длина видеокарты</td>
+                            <td>Корпус</td>
+                            <td>Высота кулера, максимальная длина видеокарты, формат материнской платы</td>
                             <td>Проверьте спецификации корпуса</td>
                         </tr>
                         <tr>
